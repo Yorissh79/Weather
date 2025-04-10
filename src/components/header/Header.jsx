@@ -13,7 +13,7 @@ function Header({sendToApp}) {
   }
 
   return (
-    <div>
+    <div className={style.div}>
 
         <p className={style.icon}>Weather app</p> 
 

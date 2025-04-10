@@ -5,9 +5,8 @@ import Card from './components/card/Card'
 import axios from 'axios'
 
 function App() {
-
   const [inpData, getInpData] = useState("")
-  const [resp, getResp] = useState([])
+  const [resp, getResp] = useState(null)
 
   const getData = (data) => {
     getInpData(data)
@@ -31,7 +30,7 @@ function App() {
       <div className='body'>
 
         {/* {resp && resp.map(item => <Card item={item}/>)} */}
-        {resp && <Card item={resp}/>}
+        {resp ? <Card item={resp}/> : <p>No data</p>}
 
       </div>
     </div>
