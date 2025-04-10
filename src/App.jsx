@@ -5,7 +5,6 @@ import Card from './components/card/Card'
 import axios from 'axios'
 
 function App() {
-  const API = "7596fcbb41bd44a8de2ce782ccaf82f8"
 
   const [inpData, getInpData] = useState("")
   const [resp, getResp] = useState([])
@@ -32,8 +31,7 @@ function App() {
       <div className='body'>
 
         {/* {resp && resp.map(item => <Card item={item}/>)} */}
-        {/* {resp && <Card item={resp}/>} */}
-        <p>{console.log(resp)}</p>
+        {resp && <Card item={resp}/>}
 
       </div>
     </div>
