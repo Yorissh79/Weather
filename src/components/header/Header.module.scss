@@ -1,0 +1,27 @@
+div {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 100%;
+    gap: 5px;
+
+    .icon {
+        padding-right: 200px;
+        color: blue;
+    }
+
+    label {
+        color: green;
+    }
+
+    #inp {
+        border: none;
+        outline: none;
+        background-color: hsl(130, 47%, 54%);
+        border-radius: 10px;
+        height: 25px;
+    }
+
+}
